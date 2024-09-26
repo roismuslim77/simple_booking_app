@@ -1,0 +1,19 @@
+[
+    {
+        "success_code": "20000",
+        "success_msg": "data has been loaded"
+    },
+    {
+        "success_code": "20001",
+        "success_msg": "success created data"
+    },
+    {
+        "success_code": "20002",
+        "success_msg": "success updated data"
+    },
+
+    {
+        "success_code": "20099",
+        "success_msg": ""
+    }
+]

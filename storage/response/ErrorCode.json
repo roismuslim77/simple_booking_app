@@ -1,0 +1,27 @@
+[
+    {
+        "err_code": "20100",
+        "err_msg": "data not found"
+    },
+    {
+        "err_code": "20101",
+        "err_msg": "field is required"
+    },
+    {
+        "err_code": "20102",
+        "err_msg": "failed create data"
+    },
+    {
+        "err_code": "20103",
+        "err_msg": "data exist"
+    },
+    {
+        "err_code": "20104",
+        "err_msg": "availability not valid"
+    },
+
+    {
+        "err_code": "20199",
+        "err_msg": ""
+    }
+  ]

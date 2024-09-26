@@ -1,0 +1,30 @@
+version: '3.6'
+services:
+  app:
+    container_name: booking-api
+    restart: always
+    build:
+      context: .
+      dockerfile: ./docker/app/Dockerfile
+    volumes:
+      - type: bind
+        source: ./app
+        target: /var/www/app
+    ports:
+      - 7001:7001
+    environment:
+      - APP_ENV=dev
+      - VIRTUAL_HOST=127.0.0.1
+      - VIRTUAL_PORT=7001
+      - TZ=Asia/Jakarta
+    networks:
+      - network-booking-api
+
+volumes:
+  app:
+    driver: "local"
+
+networks:
+  network-booking-api:
+  proxy_reverse-proxy:
+    external: true
